@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultar cartografía</title>
+    <link href="/css/styles.css" rel="stylesheet"></link>
+</head>
+<body>
+    <ul class="barra-navegacion">
+        <li><a href="/content/IniciarSeccion.html">Iniciar Seccion</a></li>
+        <li><a href="/content/Registrarse.html">Registrarse</a></li>
+        <li><a href="#Contacto">Contacto</a></li>
+    </ul>
+    <h1 class="estilo-titulo-principal">Consultar cartografía</h1>
+    <div class="flex">
+
+        <div id="cuadro-consulta">
+            <fieldset>
+                <legend>Consultar cartografia</legend>
+                <br></br>
+                <label for="tipoCar">Tipo de cartografia: </label>
+                <select id="tipoCar" name="tipoCartografia">
+                    <option value="hibrido">Hibrida</option>
+                    <option value="calles">Calles</option>
+                    <option value="aereo">Aereo</option>
+                </select>
+                <br></br>
+
+                <label for="escala">Escala:</label>
+                <input type="number" id="escala" name="escalaCartografia"></input>
+                <br></br>
+
+                <label for="reco">Recomendar lugar: </label>
+                <textarea id="reco" name="recomendarLugar" rows="2" cols="20"></textarea>
+                <br></br>
+            </fieldset>
+        </div>
+        <div id="cuadro-mapa">
+            <iframe id="estilo-frame">
+
+            </iframe>
+        </div>
+
+    </div>
+
+    <!--Barra de contacto-->
+    <div class="estilo-contacto" id="Contacto">
+        <h1 id="titulo-contacto">Contacto</h1>
+        <ul id="lista-contacto">
+            <li>Telefono:</li>
+            <li>Correo electronico:</li>
+            <li>Direccion:</li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de seccion</title>
+    <link href="/css/styles.css" rel="stylesheet"></link>
+</head>
+<body>
+    <ul class="barra-navegacion">
+        <li><a href="../index.html">Ir a pagina de inicio</a></li>
+        <li><a href="/content/Registrarse.html">Registrarse</a></li>
+        <li><a href="#Contacto">Contacto</a></li>
+    </ul>
+    <h1 class="estilo-titulo-principal">Iniciar Seccion</h1>
+    <!--Div que divide la página principal en dos bloques-->
+    <div class="flex">
+        <!--Bloque de información de la página y contacto de las redes sociales-->
+        <div id="inicio-seccion-info">
+
+        </div>
+
+        <div id="inicio-seccion-datos">
+            <form id="forma" name="forma" method="post" autocomplete="off">
+                <fieldset id="estilo-fielset-login">
+                    <legend id="estilo-titulo">Inicio de seccion</legend>
+                    <!--CAMPO INICIO DE SECCION-->
+                    <div class="elemento-inicio-seccion">
+                        <div class="estilo-divs-labels">
+                            <label for="Usuario">Usuario</label>
+                        </div>
+                        <div>
+                            <input type="text" id="Usuario" name="usuario" required="true" class="estilo-campos"/>
+                        </div> 
+                    </div>
+                    <!--CAMPO CONTRASEÑA-->
+                    <div class="elemento-inicio-seccion">
+                        <div class="estilo-divs-labels">
+                            <label for="Contraseña">Contraseña</label>
+                        </div>
+                        <div>
+                            <input type="password" id="Contraseña" name="contraseña" required="true" class="estilo-campos"/>
+                        </div>
+                    </div>
+                    
+                    <div id="estilo-div-boton">
+                        <input type="submit" value="Acceder" id="estilo-boton"></input>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+
+    </div>
+
+    <!--Barra de contacto-->
+    <div class="estilo-contacto" id="Contacto">
+        <h1 id="titulo-contacto">Contacto</h1>
+        <ul id="lista-contacto">
+            <li>Telefono:</li>
+            <li>Correo electronico:</li>
+            <li>Direccion:</li>
+        </ul>
+    </div>
+</body>
+</html>
